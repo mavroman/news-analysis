@@ -1,0 +1,15 @@
+.news-list {
+  max-width: 1232px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 16px;
+  margin: 64px auto;
+  background: #f5f6f7;
+ 
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .news-list  {
+    margin: 32px 40px;
+  }
+}

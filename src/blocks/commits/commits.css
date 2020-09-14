@@ -1,0 +1,60 @@
+@import url(./__card/commits__card.css);
+@import url(./__info/commits__info.css);
+@import url(./__date/commits__date.css);
+@import url(./__avatar/commits__avatar.css);
+@import url(./__date/commits__date.css);
+@import url(./__name/commits__name.css);
+@import url(./__email/commits__email.css);
+@import url(./__text/commits__text.css);
+@import url(./__arrow-left/commits__arrow-left.css);
+@import url(./__arrow/commits__arrow.css);
+@import url(./__link/commits__link.css);
+
+.commits {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.commits::before {
+  content: "";
+  display: block;
+  width: 5%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to left, white, white);
+  opacity: 0.7;
+  border-radius: 16px;
+}
+
+.commits::after {
+  content: "";
+  display: block;
+  width: 5%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: linear-gradient(to right, white, white);
+  opacity: 0.7;
+  z-index: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .commits {
+    justify-content: left;
+    margin: 0 0 32px 40px;
+    
+  }
+
+  .commits::before {
+   display: none;
+  }
+  
+  .commits::after {
+    display: none;
+  }
+}

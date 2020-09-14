@@ -1,0 +1,9 @@
+.tech__block-icon {
+    
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .tech__block-icon  {
+      margin: 0 auto 50px 40px;
+    }
+  }

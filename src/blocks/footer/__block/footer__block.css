@@ -1,0 +1,12 @@
+.footer__block {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1232px;
+  margin: 33px auto 25px auto;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer__block  {
+    margin: 24px 40px 21px 40px;
+  }
+}

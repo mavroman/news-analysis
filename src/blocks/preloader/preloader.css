@@ -1,0 +1,7 @@
+@import url(./__circle/preloader__circle.css);
+@import url(./__text/preloader__text.css);
+
+.preloader {
+  background: #f5f6f7;
+  border: 1px solid #f5f6f7;
+}

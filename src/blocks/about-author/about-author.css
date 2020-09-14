@@ -1,0 +1,15 @@
+@import url(./__avatar/about-author__avatar.css);
+@import url(./__information/about-author__information.css);
+@import url(./__data/about-author__data.css);
+@import url(./__text/about-author__text.css);
+@import url(./__text/_new/about-author__text_new.css);
+
+.about-author {
+  display: flex;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .about-author  {
+      margin-bottom: 48px;
+    }
+  }

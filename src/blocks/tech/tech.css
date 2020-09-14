@@ -1,0 +1,16 @@
+@import url(./__title/tech__title.css);
+@import url(./__image/tech__image.css);
+@import url(./__block-icon/tech__block-icon.css);
+
+.tech {
+  display: flex;
+  max-width: 1232px;
+  margin: 80px auto 100px auto;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .tech {
+      margin: 0 auto;
+      display: block;
+    }
+  }

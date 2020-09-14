@@ -1,0 +1,14 @@
+@import url(./__title/info-block__title.css);
+@import url(./__paragraph/info-block__paragraph.css);
+@import url(./__text/info-block__text.css);
+
+.info-block {
+  max-width: 1232px;
+  margin: 80px auto 94px 104px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .info-block  {
+    margin: 30px 40px 50px 30px;
+  }
+}

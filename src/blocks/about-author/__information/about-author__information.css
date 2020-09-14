@@ -1,0 +1,11 @@
+.about-author__information {
+  max-width: 600px;
+  height: 100%;
+  margin-top: 131px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .about-author__information {
+    margin: 40px 40px 0 0 ;
+  }
+}

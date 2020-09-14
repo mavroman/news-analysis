@@ -1,0 +1,13 @@
+.footer__list {
+  margin-right: 43px;
+}
+
+.footer__list:hover {
+  opacity: 0.7;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer__list {
+    margin-right: 25px;
+  }
+}

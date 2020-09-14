@@ -1,0 +1,25 @@
+.header__link_black{
+  color: #1a1b22;
+  border-bottom: 3px solid black;
+  padding-bottom: 23px;
+  
+}
+
+.header__link_black_no-border {
+  color: #1a1b22;
+
+}
+
+.header__link_black:hover {
+  color: black;
+}
+
+.header__link_black_no-border:hover {
+  color: black;
+}
+
+@media screen and (min-width: 320px) and (max-width: 475px) {
+  .header__link_black {
+    padding-bottom: 18px;
+  }
+}

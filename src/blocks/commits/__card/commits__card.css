@@ -1,0 +1,27 @@
+.commits__card {
+  width: 400px;
+  height: 288px;
+  flex-shrink: 0;
+  margin-right: 16px;
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+.commits__card:hover {
+  box-shadow: 0 0 10px 5px rgba(8, 29, 45, 0.1);
+}
+
+.commits__card:active {
+  background: rgba(8, 29, 45, 0.1);
+  filter: blur(0.01px);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .commits__card {
+    width: 336px;
+    height: 242px;
+    margin-right: 8px;
+   
+
+  }
+}
