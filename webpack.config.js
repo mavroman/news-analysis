@@ -12,7 +12,7 @@ module.exports = {
   entry: {
     main: "./src/index.js",
     about: "./src/about.js",
-    analytics: "./src/analytics.js"
+    analytics: "./src/analytics.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -28,9 +28,14 @@ module.exports = {
       },
       // Добавьте ещё одно правило:
       {
-        test: /\.css$/i,
+        test: /\.css$/,
         use: [
-          isDev ? "style-loader" : MiniCssExtractPlugin.loader,
+          isDev ? "style-loader" : {
+                loader: MiniCssExtractPlugin.loader,
+                options: {
+                  publicPath: "../",
+                },
+              },
           {
             loader: "css-loader",
             options: {
@@ -57,6 +62,7 @@ module.exports = {
       },
     ],
   },
+
   plugins: [
     new MiniCssExtractPlugin({
       filename: "./css/[name].[contenthash].css",
