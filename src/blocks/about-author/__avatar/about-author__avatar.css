@@ -1,6 +1,6 @@
 .about-author__avatar {
   max-width: 100%;
-  
+
   border-radius: 1000px;
   margin: 80px 56px 80px 104px;
 }
@@ -18,6 +18,5 @@
     width: 272px;
     display: block;
     margin: 32px auto;
-    
   }
 }
