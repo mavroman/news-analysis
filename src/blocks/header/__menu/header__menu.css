@@ -9,7 +9,7 @@
     }
   }
 
-  @media screen and (min-width: 320px) and (max-width: 475px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     .header__menu {
       margin: 16px 14px 16px auto;
       

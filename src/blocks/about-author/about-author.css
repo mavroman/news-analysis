@@ -8,8 +8,15 @@
   display: flex;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 590px) and (max-width: 1023px) {
     .about-author  {
+      margin-bottom: 48px;
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 589px) {
+    .about-author {
+      display: block;
       margin-bottom: 48px;
     }
   }

@@ -6,7 +6,22 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .footer__block  {
+  .footer__block {
     margin: 24px 40px 21px 40px;
+  }
+}
+
+@media (min-width: 590px) and (max-width: 767px) {
+  .footer__block {
+    margin: 24px 16px 21px 16px;
+  }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 589px) {
+  .footer__block {
+    display: grid;
+    grid-template-columns: 2fr auto;
+    margin: 20px 16px 20px 16px;
   }
 }

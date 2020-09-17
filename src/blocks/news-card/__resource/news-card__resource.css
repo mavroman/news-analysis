@@ -10,11 +10,8 @@
   color: #b6bcbf;
 }
 
-
 @media (min-width: 768px) and (max-width: 1023px) {
   .news-card__resource {
     margin: 0 auto auto 24px;
-    
-
   }
 }

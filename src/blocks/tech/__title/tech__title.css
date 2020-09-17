@@ -10,7 +10,7 @@
 
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 320px) and (max-width: 1023px) {
   .tech__title {
     max-width: 336px;
     font-size: 30px;

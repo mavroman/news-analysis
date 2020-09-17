@@ -2,8 +2,11 @@
 @import url(./__point/history__point.css);
 @import url(./__points-button/history__points-button.css);
 @import url(./__points-button/_active/history__points-button_active.css);
+@import url(./__link-mobile/history__link-mobile.css);
+@import url(./__open-mobile/history__open-mobile.css);
 
 .history {
   background: #f5f6f7;
   border: 1px solid#f5f6f7;
 }
+

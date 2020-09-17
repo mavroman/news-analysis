@@ -1,2 +1,8 @@
 .footer__navigation {
 }
+
+@media screen and (min-width: 320px) and (max-width: 589px) {
+    .footer__navigation {
+      margin-bottom: 10px;
+    }
+  }

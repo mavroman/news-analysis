@@ -10,7 +10,7 @@
   cursor: pointer;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 320px) and (max-width: 1023px) {
   .commits__arrow-left  {
     display: none;
   }

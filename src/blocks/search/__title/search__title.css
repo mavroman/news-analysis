@@ -10,7 +10,7 @@
   margin-top: 80px;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 475px) and (max-width: 1023px) {
   .search__title {
     margin-top: 40px;
     font-size: 36px;
@@ -18,7 +18,7 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 475px) {
+@media screen and (min-width: 320px) and (max-width: 474px) {
   .search__title {
     margin-top: 30px;
     font-size: 36px;

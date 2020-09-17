@@ -6,3 +6,9 @@
   line-height: 30px;
   color: #1a1b22;
 }
+
+@media (min-width: 320px) and (max-width: 475px) {
+  .analytics__days {
+    font-size: 22px;
+  }
+}

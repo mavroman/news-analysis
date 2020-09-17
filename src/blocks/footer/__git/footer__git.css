@@ -3,3 +3,10 @@
     height: 20px;
     margin-right: 28px;
 }
+
+@media (min-width: 589px) and (max-width: 767px) {
+    .footer__git {
+      margin-right: 15px;
+    }
+  }
+

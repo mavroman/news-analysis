@@ -1,2 +1,8 @@
 .footer__icons {
 }
+
+@media screen and (min-width: 320px) and (max-width: 589px) {
+  .footer__icons {
+    max-width: 80px;
+  }
+}

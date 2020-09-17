@@ -1,3 +1,13 @@
 .search-result__icon:hover {
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
+
+@media screen and (min-width: 320px)  {
+  .search-result__icon {
+    margin-top: 5px;
+    width: 9px;
+    height: 14px;
+  
+    
+  }
+}

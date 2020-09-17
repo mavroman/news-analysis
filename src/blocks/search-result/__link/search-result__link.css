@@ -3,10 +3,15 @@
   height: 24px;
   display: flex;
   text-decoration: none;
+
 }
 
 @media screen and (min-width: 320px) and (max-width: 475px) {
   .search-result__link {
     max-width: 450px;
+   
   }
 }
+
+
+

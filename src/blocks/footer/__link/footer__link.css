@@ -6,4 +6,11 @@
   font-size: 18px;
   line-height: 24px;
   color: #1a1b22;
+  
+}
+
+@media (min-width: 589px) and (max-width: 767px) {
+  .footer__link {
+    font-size: 15px;
+  }
 }
