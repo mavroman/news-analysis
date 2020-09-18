@@ -3,8 +3,16 @@
   margin: 0 auto;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 520px) and (max-width: 1023px) {
   .search__unity {
-    margin: 30px 12px 32px 16px;
+    max-width: 470px;
+    margin: 30px auto 32px auto;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 519px) {
+  .search__unity {
+    max-width: 280px;
+    margin: 30px auto 32px auto;
   }
 }
