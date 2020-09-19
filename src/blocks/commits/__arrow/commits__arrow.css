@@ -1,0 +1,18 @@
+.commits__arrow {
+  position: absolute;
+  background: url(../../../images/icon/arrow/slider-control2.svg) no-repeat center;
+  top: 126px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+@media (min-width: 320px) and (max-width: 1023px) {
+  .commits__arrow  {
+    display: none;
+  }
+}
+

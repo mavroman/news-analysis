@@ -1,0 +1,11 @@
+@import url(../vendor/fonts.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/info/info.css);
+@import url(../blocks/info-block/info-block.css);
+@import url(../blocks/tech/tech.css);
+@import url(../blocks/use-technology/use-technology.css);
+@import url(../blocks/about-author/about-author.css);
+@import url(../blocks/history/history.css);
+@import url(../blocks/search-result/search-result.css);
+@import url(../blocks/commits/commits.css);
+@import url(../blocks/footer/footer.css);

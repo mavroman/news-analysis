@@ -1,0 +1,22 @@
+@import url(./__header/statistics__header.css);
+@import url(./__result/statistics__result.css);
+@import url(./__news/statistics__news.css);
+@import url(./__header/_link/statistics__header_link.css);
+@import url(./__header/_mobile/statistics__header_mobile.css);
+
+.statistics {
+  max-width: 1232px;
+  margin: 40px auto 80px auto;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .statistics {
+      margin: 32px auto 40px 40px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .statistics {
+      margin: 16px auto 24px 16px;
+  }
+}

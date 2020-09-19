@@ -1,0 +1,30 @@
+@import url(./__days/analytics__days.css);
+@import url(./__info/analytics__info.css);
+@import url(./__text/analytics__text.css);
+@import url(./__list/analytics__list.css);
+@import url(./__number/analytics__number.css);
+@import url(./__number-list/analytics__number-list.css);
+@import url(./__number/_margin/analytics__number_margin.css);
+@import url(./__number/_nul/analytics__number_nul.css);
+@import url(./__table/analytics__table.css);
+@import url(./__date/analytics__date.css);
+@import url(./__chart/analytics__chart.css);
+@import url(./__block-chart/analytics__block-chart.css);
+@import url(./__new-number/analytics__new-number.css);
+
+.analytics {
+  max-width: 1232px;
+  margin: 80px auto 40px auto;
+}
+
+@media (min-width: 768px) and (max-width: 1250px) {
+  .analytics {
+    margin: 40px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .analytics {
+      margin: 16px ;
+  }
+}

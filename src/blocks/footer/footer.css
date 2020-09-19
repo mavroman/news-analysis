@@ -1,0 +1,14 @@
+@import url(./__navigation/footer__navigation.css);
+@import url(./__developer/footer__developer.css);
+@import url(./__list/footer__list.css);
+@import url(./__icons/footer__icons.css);
+@import url(./__git/footer__git.css);
+@import url(./__facebook/footer__facebook.css);
+@import url(./__list/_yandex/footer__list_yandex.css);
+@import url(./__links/footer__links.css);
+@import url(./__link/footer__link.css);
+@import url(./__block/footer__block.css);
+
+.footer {
+  max-width: 1440px;
+}

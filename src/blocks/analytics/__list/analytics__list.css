@@ -1,0 +1,7 @@
+.analytics__list {
+  display: flex;
+  justify-content: space-between;
+  padding-inline-start: 0;
+  list-style-type: none;
+  margin: 0 0 0 100px;
+}

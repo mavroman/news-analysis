@@ -1,0 +1,21 @@
+@import url(./__title/search__title.css);
+@import url(./__subtitle/search__subtitle.css);
+@import url(./__field/search__field.css);
+@import url(./__input/search__input.css);
+@import url(./__unity/search__unity.css);
+
+.search {
+  background: url(../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.jpg)
+    no-repeat center center fixed;
+  background-size: cover;
+  max-width: 100%;
+  height: 576px;
+}
+
+@media (min-width: 520px) and (max-width: 1023px) {
+  .search {
+    height: 400px;
+  }
+}
+
+

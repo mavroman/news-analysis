@@ -1,0 +1,14 @@
+.analytics__days {
+  font-family: Roboto Slab, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  color: #1a1b22;
+}
+
+@media (min-width: 320px) and (max-width: 475px) {
+  .analytics__days {
+    font-size: 22px;
+  }
+}

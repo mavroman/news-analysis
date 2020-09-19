@@ -1,0 +1,21 @@
+.footer__developer {
+  margin: 0;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #b6bcbf;
+}
+
+@media (min-width: 590px) and (max-width: 767px) {
+  .footer__developer {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 589px) {
+  .footer__developer {
+    order: 1;
+  }
+}
