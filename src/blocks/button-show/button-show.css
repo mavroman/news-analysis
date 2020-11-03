@@ -1,4 +1,5 @@
 .button-show {
+  display: block;
   width: 288px;
   height: 64px;
   margin: 64px auto 80px auto;
@@ -11,7 +12,6 @@
   line-height: 24px;
   color: #1a1b22;
   border: 0;
-  display: block;
   cursor: pointer;
 }
 

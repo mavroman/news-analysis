@@ -34,8 +34,10 @@
           Введите в поиске любую тему и узнайте, насколько популярной она была в
           новостях за прошедшую неделю.
         </p>
-        <form class="search__field">
+        <form name="form" class="search__field" novalidate>
           <input
+            name="data"
+            id="inputlocal"
             type="text"
             class="search__input"
             placeholder="Введите тему новости"
@@ -43,9 +45,14 @@
             maxlength="30"
             required
           />
-          <button type="button" class="button">Искать</button>
+          <span class="error"></span>
+          <button type="submit" class="button button_valid">Искать</button>
         </form>
       </div>
+    </div>
+    <div class="preloader">
+      <i class="preloader__circle"></i>
+      <p class="preloader__text">Идет поиск новостей...</p>
     </div>
 
     <div class="group-news">
@@ -60,144 +67,13 @@
           />
         </a>
       </div>
-      <div class="news-list">
-        <div class="news-card">
-          <a href="https://yandex.ru" class="news-card__link">
-            <img
-              src="<%=require('./images/image_08.jpg').default%>"
-              alt="Картинка из новостей"
-              class="news-card__image"
-            />
-            <div class="news-card__description">
-              <p class="news-card__date">2 августа, 2019</p>
-              <h3 class="news-card__title">Национальное достояние – парки</h3>
-              <p class="news-card__subtitle">
-                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-                начала складываться система национальных парков – охраняемых
-                территорий, где и сегодня каждый может приобщиться к природе.
-              </p>
-            </div>
-            <p class="news-card__resource">Лента.ру</p>
-          </a>
-        </div>
 
-        <div class="news-card">
-          <a href="https://yandex.ru" class="news-card__link">
-            <img
-              src="<%=require('./images/image_08.jpg').default%>"
-              alt="Картинка из новостей"
-              class="news-card__image"
-            />
-            <div class="news-card__description">
-              <p class="news-card__date">2 августа, 2019</p>
-              <h3 class="news-card__title">Национальное достояние – парки</h3>
-              <p class="news-card__subtitle">
-                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-                начала складываться система национальных парков – охраняемых
-                территорий, где и сегодня каждый может приобщиться к природе.В
-                2016 году Америка отмечала важный юбилей: сто лет назад здесь
-                начала складываться система национальных парков – охраняемых
-                территорий, где и сегодня каждый может приобщиться к природе.
-              </p>
-            </div>
-            <p class="news-card__resource">Лента.ру</p>
-          </a>
-        </div>
-
-        <div class="news-card">
-          <a href="https://yandex.ru" class="news-card__link">
-            <img
-              src="<%=require('./images/image_08.jpg').default%>"
-              alt="Картинка из новостей"
-              class="news-card__image"
-            />
-            <div class="news-card__description">
-              <p class="news-card__date">2 августа, 2019</p>
-              <h3 class="news-card__title">
-                «Первозданная тайга»: новый фотопроект Игоря Шпиленка
-              </h3>
-              <p class="news-card__subtitle">
-                Знаменитый фотограф снимает первозданные леса России, чтобы
-                рассказать о необходимости их сохранения. В этот раз он
-                отправился в Двинско-Пинежскую тайгу, где...
-              </p>
-            </div>
-            <p class="news-card__resource">Лента.ру</p>
-          </a>
-        </div>
-
-        <div class="news-card">
-          <a href="https://yandex.ru" class="news-card__link">
-            <img
-              src="<%=require('./images/image_08.jpg').default%>"
-              alt="Картинка из новостей"
-              class="news-card__image"
-            />
-            <div class="news-card__description">
-              <p class="news-card__date">2 августа, 2019</p>
-              <h3 class="news-card__title">Национальное достояние – парки</h3>
-              <p class="news-card__subtitle">
-                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-                начала складываться система национальных парков – охраняемых
-                территорий, где и сегодня каждый может приобщиться к природе.
-              </p>
-            </div>
-            <p class="news-card__resource">Лента.ру</p>
-          </a>
-        </div>
-
-        <div class="news-card">
-          <a href="https://yandex.ru" class="news-card__link">
-            <img
-              src="<%=require('./images/image_08.jpg').default%>"
-              alt="Картинка из новостей"
-              class="news-card__image"
-            />
-            <div class="news-card__description">
-              <p class="news-card__date">2 августа, 2019</p>
-              <h3 class="news-card__title">Национальное достояние – парки</h3>
-              <p class="news-card__subtitle">
-                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-                начала складываться система национальных парков – охраняемых
-                территорий, где и сегодня каждый может приобщиться к природе.В
-                2016 году Америка отмечала важный юбилей: сто лет назад здесь
-                начала складываться система национальных парков – охраняемых
-                территорий, где и сегодня каждый может приобщиться к природе.
-              </p>
-            </div>
-            <p class="news-card__resource">Лента.ру</p>
-          </a>
-        </div>
-
-        <div class="news-card">
-          <a href="https://yandex.ru" class="news-card__link">
-            <img
-              src="<%=require('./images/image_08.jpg').default%>"
-              alt="Картинка из новостей"
-              class="news-card__image"
-            />
-            <div class="news-card__description">
-              <p class="news-card__date">2 августа, 2019</p>
-              <h3 class="news-card__title">
-                «Первозданная тайга»: новый фотопроект Игоря Шпиленка
-              </h3>
-              <p class="news-card__subtitle">
-                Знаменитый фотограф снимает первозданные леса России, чтобы
-                рассказать о необходимости их сохранения. В этот раз он
-                отправился в Двинско-Пинежскую тайгу, где...
-              </p>
-            </div>
-            <p class="news-card__resource">Лента.ру</p>
-          </a>
-        </div>
-      </div>
+      <div class="news-list"></div>
+      
       <button type="button" class="button-show">Показать еще</button>
     </div>
-
-    <div class="preloader">
-      <i class="preloader__circle"></i>
-      <p class="preloader__text">Идет поиск новостей...</p>
-    </div>
+    
+   
 
     <div class="not-found">
       <img
@@ -208,6 +84,13 @@
       <p class="not-found__answer">Ничего не найдено</p>
       <p class="not-found__text">
         К сожалению по вашему запросу ничего не найдено.
+      </p>
+    </div>
+
+    <div class="error-server">
+      <p class="error-server__answer">Во время запроса произошла ошибка. </p>
+      <p class="error-server__text">
+        Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз.
       </p>
     </div>
 
@@ -223,12 +106,13 @@
       <div class="about-author__information">
         <h3 class="about-author__data">Об авторе</h3>
         <p class="about-author__text">
-          Это блок с описанием автора проекта. Здесь следует указать, как вас
-          зовут, чем вы занимаетесь, какими технологиями разработки владеете.
+         Меня зовут Маврин Роман. Я фронтенд-разработчик. Я занимаюсь версткой и 
+         разработкой веб-интерфейсов.
         </p>
         <p class="about-author__text">
-          Также можно рассказать о процессе обучения в Практикуме, чему вы тут
-          научились, и чем можете помочь потенциальным заказчикам.
+          Создаю выразительные и доступные разметки, занимаюсь построением обычных и адаптивных страниц,
+          оптимизирую код и подготавливаю проект к публикации. Использую JavaScript, методологию БЭМ, инструменты автоматизации, настраиваю 
+          сборку проекта для публикации.  
         </p>
       </div>
     </section>
@@ -268,6 +152,6 @@
       </div>
     </footer>
 
-    <script src="<%= htmlWebpackPlugin.files.js %>"></script>
+    <script  type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
   </body>
 </html>

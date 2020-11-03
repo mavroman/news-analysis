@@ -1,5 +1,14 @@
 .news-card__image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+
   border-radius: 16px;
 }
+
+
+/* @media (min-width: 320px) and (max-width: 475px) {
+  .news-card__image {
+    object-fit: cover;
+  }
+} */

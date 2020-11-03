@@ -3,6 +3,7 @@
 @import url(./__answer/not-found__answer.css);
 
 .not-found {
+  display: none;
   background: #f5f6f7;
   border: 1px solid #f5f6f7;
 }

@@ -1,0 +1,10 @@
+@import url(./__answer/error-server__answer.css);
+@import url(./__text/error-server__text.css);
+
+.error-server {
+  display: none;
+  margin: auto;
+  background: #f5f6f7;
+  border: 1px solid #f5f6f7;
+ 
+}

@@ -9,3 +9,7 @@
 @import url(../blocks/search-result/search-result.css);
 @import url(../blocks/commits/commits.css);
 @import url(../blocks/footer/footer.css);
+@import url(../blocks/swiper-container/swiper-container.css);
+@import url(../blocks/swiper-slide/swiper-slide.css);
+@import url(../blocks/swiper-bundle/swiper-bundle.css);
+
