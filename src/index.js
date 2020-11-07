@@ -3,18 +3,39 @@ import { NewsApi } from "./js/modules/NewsApi";
 import { NewsCard } from "./js/components/NewsCard";
 import { NewsCardList } from "./js/components/NewsCardList";
 import { parsNewDate } from "./js/utils/parsNewDate";
-import {newArrayDate, list, preloader, buttonShow, blockSearch, notFound, errorServer, searchInput, dataInput, buttonNew, clear, errorMessage } from "./js/constants/constants";
+import {
+  newArrayDate,
+  list,
+  preloader,
+  buttonShow,
+  blockSearch,
+  notFound,
+  errorServer,
+  searchInput,
+  dataInput,
+  buttonNew,
+  clear,
+  errorMessage,
+} from "./js/constants/constants";
 import "./pages/style.css";
 
 
 let date = new Date();
-const parsedDateTo = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
-const parsedDateFrom = returnLastItem(newArrayDate); 
+const parsedDateTo =
+  date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
+const parsedDateFrom = returnLastItem(newArrayDate);
 
 const url = "https://nomoreparties.co/news/v2/everything?";
 const dates = `from=${parsedDateFrom}&to=${parsedDateTo}&`;
 const lang = "language=ru&";
 const key = "apiKey=c4cb18a55ba6456d9d21c21558409a17";
+
+let currentCard = 3;
+
+function buttonShowMore() {
+  currentCard = currentCard + 3;
+  return currentCard;
+}
 
 function returnLastItem(arr) {
   return arr[arr.length - 1];
@@ -24,9 +45,23 @@ const newsCardList = new NewsCardList(list, createCardCallback);
 const addValid = new FormValidator(form, errorMessage, clear);
 const api = new NewsApi(url, dates, lang, key);
 
-
-function createCardCallback(source, publishedAt, title, description, urlToImage, url) {
-  return new NewsCard(source, publishedAt, title, description, urlToImage, url, parsNewDate).createCard();
+function createCardCallback(
+  source,
+  publishedAt,
+  title,
+  description,
+  urlToImage,
+  url
+) {
+  return new NewsCard(
+    source,
+    publishedAt,
+    title,
+    description,
+    urlToImage,
+    url,
+    parsNewDate
+  ).createCard();
 }
 
 function addNews(e) {
@@ -52,16 +87,29 @@ function addNews(e) {
           blockSearch.style.display = "none";
           localStorage.clear();
         } else {
-          newsCardList.render(res.articles);
+          list.innerHTML = "";
+          newsCardList.render(res.articles.slice(0, 3));
           notFound.style.display = "none";
           preloader.style.display = "none";
           blockSearch.style.display = "block";
-          location.reload();
+          if (localStorage.length > 1 && res.totalResults <= 3) {
+            buttonShow.style.display = "none";
+          }
+
+          buttonShow.addEventListener("click", () => {
+            newsCardList.render(
+              res.articles.slice(currentCard, currentCard + 3)
+            );
+            buttonShowMore();
+            if (currentCard >= res.totalResults || currentCard >= 100) {
+              buttonShow.style.display = "none";
+            }
+          });
         }
       })
       .catch((err) => {
-        errorServer.style.display = "block",
-          preloader.style.display = "none",
+        (errorServer.style.display = "block"),
+          (preloader.style.display = "none"),
           (notFound.style.display = "none"),
           (blockSearch.style.display = "none");
 
@@ -76,14 +124,6 @@ function addNews(e) {
 
 buttonNew.addEventListener("click", addNews);
 
-
-let currentCard = 3;
-
-function buttonShowMore() {
-  currentCard = currentCard + 3;
-  return currentCard;
-}
-
 const showLocal = localStorage.getItem("cards");
 const showLocalParse = JSON.parse(showLocal);
 
@@ -94,7 +134,7 @@ buttonShow.addEventListener("click", () => {
   buttonShowMore();
   if (currentCard >= showLocalParse.totalResults || currentCard >= 100) {
     buttonShow.style.display = "none";
-  } 
+  }
 });
 
 function showCards() {
@@ -105,8 +145,8 @@ function showCards() {
 
 if (localStorage.length > 1) {
   showCards();
-} 
+}
 
-if (localStorage.length > 1 && showLocalParse.totalResults <= 3 ) {
+if (localStorage.length > 1 && showLocalParse.totalResults <= 3) {
   buttonShow.style.display = "none";
 }
