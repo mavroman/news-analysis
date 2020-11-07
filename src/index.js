@@ -6,7 +6,6 @@ import { parsNewDate } from "./js/utils/parsNewDate";
 import {newArrayDate, list, preloader, buttonShow, blockSearch, notFound, errorServer, searchInput, dataInput, buttonNew, clear, errorMessage } from "./js/constants/constants";
 import "./pages/style.css";
 
-(function() {
 
 let date = new Date();
 const parsedDateTo = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
@@ -111,5 +110,3 @@ if (localStorage.length > 1) {
 if (localStorage.length > 1 && showLocalParse.totalResults <= 3 ) {
   buttonShow.style.display = "none";
 }
-
-})();

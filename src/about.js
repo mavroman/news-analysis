@@ -6,7 +6,6 @@ import {swiper} from "./js/constants/Swiper";
 import {parsNewDate} from "./js/utils/parsNewDate";
 
 
-(function () {
 const listCommit = document.querySelector(".swiper-wrapper");
 const commitCardList = new CommitCardList(listCommit, creatCommitCallback);
 const githubApi = new GithubApi();
@@ -20,4 +19,3 @@ githubApi.getCommits().then((res) => {
  })
 .catch((err) => console.log(err));
 
-})();
