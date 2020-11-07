@@ -8,8 +8,10 @@
 @import url(./__block-image/news-card__block-image.css);
 
 .news-card {
+
   max-width: 400px;
   height: 576px;
+
   margin-bottom: 16px;
   border-radius: 16px;
   background: #ffffff;
@@ -21,6 +23,7 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .news-card {
+
     min-width: 224px;
     height: 425px;
   }
@@ -33,7 +36,9 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 475px) {
+
+
+@media screen and (min-width: 320px) and (max-width: 549px) {
   .news-card {
     min-width: 288px;
     height: 470px;

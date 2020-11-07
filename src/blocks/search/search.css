@@ -12,7 +12,7 @@
   height: 576px;
 }
 
-@media (min-width: 476px) and (max-width: 1023px) {
+@media (min-width: 520px) and (max-width: 1023px) {
   .search {
     height: 400px;
   }

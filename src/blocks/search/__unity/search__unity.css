@@ -3,9 +3,11 @@
   margin: 0 auto;
 }
 
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .search__unity {
     max-width: 500px;
+
     margin: 30px auto 32px auto;
   }
 }
@@ -28,5 +30,6 @@
   .search__unity {
     max-width: 350px;
     margin: 30px 12px 32px 16px;
+
   }
 }
