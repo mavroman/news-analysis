@@ -1,0 +1,17 @@
+.error {
+  position: absolute;
+  font-size: 14px;
+  color: red;
+  height: 20px;
+  margin-top: 43px;
+  margin-left: 25px;
+  /* border-top: 2px solid red; */
+}
+
+@media (min-width: 320px) and (max-width: 1023px) {
+    .error {
+        margin-top: 40px;
+    }
+  }
+  
+ 

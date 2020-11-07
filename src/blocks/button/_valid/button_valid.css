@@ -1,0 +1,15 @@
+.button_valid {
+    background-color: #2f71e5;
+    box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+    color: white;
+    
+}
+
+
+.button_valid:hover {
+    background: #347eff;
+  }
+  
+  .button_valid:active {
+    background: #2a65cc;
+  }

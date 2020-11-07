@@ -1,4 +1,5 @@
 .news-card__description {
+  max-width: 352px;
   height: 222px;
   margin: 0 24px 0 24px;
 }

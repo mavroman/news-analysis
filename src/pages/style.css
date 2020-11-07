@@ -11,4 +11,6 @@
 @import url(../blocks/search-result/search-result.css);
 @import url(../blocks/button-show/button-show.css);
 @import url(../blocks/footer/footer.css);
+@import url(../blocks/error/error.css);
+@import url(../blocks/error-server/error-server.css);
 

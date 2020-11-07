@@ -1,5 +1,7 @@
 .commits__avatar {
-  background: url(../../../images/icon/comment/image-01.jpg) no-repeat;
+  /* background: url(../../../images/icon/comment/image-01.jpg) no-repeat; */
+  background-size: cover;
+  border-radius: 1000px;
   width: 64px;
   height: 64px;
 }

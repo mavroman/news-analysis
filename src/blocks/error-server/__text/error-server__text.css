@@ -1,0 +1,12 @@
+.error-server__text {
+  max-width: 600px;
+  margin: 16px auto 80px auto;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+
+  text-align: center;
+  color: #b6bcbf;
+}

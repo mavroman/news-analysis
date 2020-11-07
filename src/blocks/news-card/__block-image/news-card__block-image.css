@@ -1,0 +1,25 @@
+.news-card__block-image {
+  max-width: 400px;
+  height: 272px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .news-card__block-image {
+        min-width: 224px;
+        height: 150px;
+    }
+  }
+
+  @media (min-width: 550px) and (max-width: 767px) {
+    .news-card__block-image {
+        min-width: 224px;
+        height: 175px;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 549px) {
+    .news-card__block-image {
+        min-width: 288px;
+        height: 196px;
+    }
+  }
