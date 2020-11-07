@@ -1,7 +1,6 @@
 import "./pages/analytics.css";
 import { parsNewDate } from "./js/utils/parsNewDate";
 
-(function () {
 const resultStatistics = document.querySelector(".statistics__result");
 const resultNews = document.querySelector(".statistics__news");
 const statisticsNews = document.getElementById("statist");
@@ -87,5 +86,3 @@ percentNews.forEach((item, i) => {
   item.style.width = `${newArray[i]}%`
 }) 
 
-
-})();
